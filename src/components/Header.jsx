@@ -5,7 +5,7 @@ import logo from '../assets/logo.png';
 import menu from '../assets/menu.svg';
 import close from '../assets/close.svg';
 
-const StyledHeader = styled.header`
+const StyledHeader = styled.div`
     background-color: #111419;    
     padding: 1.5rem 6rem;
     display: flex;

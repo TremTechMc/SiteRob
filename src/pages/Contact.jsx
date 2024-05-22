@@ -8,7 +8,7 @@ const CentralDiv = styled.div`
     height: 87.2vh;    
 `;
 
-export default function About() {
+export default function SignUp() {
     return (
         <div>
             <Header />
