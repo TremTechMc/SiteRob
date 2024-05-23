@@ -7,6 +7,9 @@ import walle from '../assets/wall.png';
 import img1 from '../assets/imgCards/1.jpg';
 import img2 from '../assets/imgCards/2.jpg';
 import img3 from '../assets/imgCards/3.jpg';
+import mao from '../assets/mao.png';
+import arduino from '../assets/arduino-mega.png';
+import robozinho from '../assets/robozinho.png';
 
 const ContainerDiv = styled.div`
     background-color: #111419;    
@@ -132,6 +135,87 @@ const CardsContainer = styled.div`
     align-items: center;    
 `;
 
+const ContainerDiv3 = styled.div`
+    background-color: #111419;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+`;
+
+const ImageDivHand = styled.div`
+
+    width: 40%;
+
+    img{
+        width: 88%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
+`;
+
+const ContainerDiv4 = styled.div`
+    background-color: #fff;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+`;
+
+const InnerContainer = styled.div`
+    display: flex;
+    width: 70%;
+    justify-content: space-between; /* Espaço entre TextDiv2 e ImageDiv2 */
+`;
+
+
+const TextDiv2 = styled.div`
+    width: 35%;   
+`;
+
+const ImageDiv2 = styled.div`
+    width: 35%; 
+
+    img{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
+`;
+
+const ContainerDiv5 = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;    ;
+    height: 50vh;
+`;
+
+const CardContainerDiv = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    width: 70%;
+    height: 40vh;
+    background-color:#e4c54c;
+    color: #fff;
+    border-radius: 20px;
+
+    img{
+        width: 45%;
+        height: auto;
+        margin-bottom: 7rem;
+    }
+`;
+
+const ContainerDiv6 = styled.div`
+    background-color: #111419;
+    height: 40vh;
+`;
+
 export default function Home() {
     return (
         <div>
@@ -151,20 +235,50 @@ export default function Home() {
             <ContainerDiv2>
                 <h1>Trabalhamos com diversos tipos de projetos</h1>
                 <CardsContainer>
-                    <Card image={img1} title="Robótica com sucata" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." />
-                    <Card image={img2} title="Robótica com arduíno" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." />
-                    <Card image={img3} title="Robótica Raspberry PI" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." />
+                    <Card image={img1} title="Carro com Arduino" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." />
+                    <Card image={img2} title="Robótica com sensores" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." />
+                    <Card image={img3} title="Robótica com Raspberry" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." />
                 </CardsContainer>
             </ContainerDiv2 >
-            {/*<div>
-                <h1>Consideramos o aprendizado na prática</h1>
-            </div>
-            <div>
-                <h1>Nossos projetos oferecidos</h1>
-            </div>
-            <div>
-                <h1>Contato</h1>
-            </div>*/}
+            <ContainerDiv3>
+                <ImageDivHand>
+                    <img src={mao} alt="Mão" />
+                </ImageDivHand>
+                <TextDiv>
+                    <h1>Mão mecânica</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ducimus possimus voluptatem libero assumenda? Consequuntur excepturi odit provident vel, inventore id voluptatem minus quos voluptas voluptatum beatae architecto illo vitae, esse omnis ab aliquam fugiat distinctio maxime non? Ut, suscipit.</p>
+                </TextDiv>
+            </ContainerDiv3>
+            <ContainerDiv4>
+                <InnerContainer>
+                    <TextDiv2>
+                        <h1>Nossos projetos oferecidos</h1>
+                        <p>O objetivo deste projeto de extensão é capacitar os alunos do ensino médio e fundamental II da cidade de Monte Carmelo-MG no desenvolvimento de soluções baseadas em robótica envolvendo programação e design de hardware, buscando constribuir no processo de ensino aprendizagem e despertando o interesse pela área da computação.</p>
+                        <h2>Horários</h2>
+                        <p>Terça e Quinta: 17h00 às 18h30 - Turma 1</p>
+                        <h2>Tecnologias</h2>
+                        <ul>
+                            <li>ThinkerCad</li>
+                            <li>Plataforma</li>
+                            <li>Arduino</li>
+                            <li>Arduino IDE</li>
+                        </ul>
+                    </TextDiv2>
+                    <ImageDiv2>
+                        <img src={robozinho} alt="Robozinho" />
+                    </ImageDiv2>
+                </InnerContainer>
+            </ContainerDiv4>
+            <ContainerDiv5>
+                <CardContainerDiv>
+                    <img src={arduino} alt="Arduino Mega" />
+                    <TextDiv>
+                        <h1>Arduino</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni perspiciatis consectetur eum est, in fugiat suscipit velit libero exercitationem beatae soluta placeat laborum illum odit, atque, ratione accusantium ipsam quod magnam repudiandae officia! Distinctio, rerum quae ratione necessitatibus dolores accusamus sit nam quas id molestias officia rem modi debitis aut.</p>
+                    </TextDiv>
+                </CardContainerDiv>
+            </ContainerDiv5>
+            <ContainerDiv6></ContainerDiv6>
         </div >
     );
 }
