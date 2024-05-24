@@ -75,6 +75,7 @@ const TextDiv = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 0;
 
         h1 {
             font-size: 1.5rem;
@@ -115,8 +116,8 @@ const ContainerDiv2 = styled.div`
     padding-top: 2rem;
     padding-bottom: 1rem;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column;    
+    align-items: center;    
 
     h1{
         color: #fff;        
@@ -124,10 +125,16 @@ const ContainerDiv2 = styled.div`
 
     @media screen and (max-width: 730px) {  
         margin-top: 0;   
-        height: auto;
-        display: flex;
-        flex-direction: column;        
-        align-items: center;        
+        padding-bottom: 2rem;
+        height: auto;     
+        
+        h1{
+            font-size: 1.5rem;
+            margin-top: 0;
+            text-align: center;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
     }
 `;
 
@@ -135,6 +142,12 @@ const CardsContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;    
+
+    @media screen and (max-width: 730px) {  
+        flex-direction: column; 
+        justify-content: center;       
+        align-items: center;
+    }
 `;
 
 const ContainerDiv3 = styled.div`
@@ -142,7 +155,12 @@ const ContainerDiv3 = styled.div`
     height: 40vh;
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;  
+    
+    @media screen and (max-width: 730px) {  
+        height: auto;
+        flex-direction: column;
+    }
 `;
 
 const ImageDivHand = styled.div`
@@ -156,6 +174,10 @@ const ImageDivHand = styled.div`
         justify-content: center;
         align-items: center;
     }    
+
+    @media screen and (max-width: 730px) {  
+        width: 80%; 
+    }
 `;
 
 const ContainerDiv4 = styled.div`
@@ -163,13 +185,24 @@ const ContainerDiv4 = styled.div`
     height: 55vh;
     display: flex;
     align-items: center;
-    justify-content: center;  
+    justify-content: center; 
+    
+    @media screen and (max-width: 730px) {  
+        height: auto;              
+    }
 `;
 
 const InnerContainer = styled.div`
     display: flex;
     width: 70%;
-    justify-content: space-between;
+    justify-content: space-between;    
+
+    @media screen and (max-width: 730px) { 
+        flex-direction: column;           
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+    }
 `;
 
 
@@ -187,6 +220,10 @@ const TextDiv2 = styled.div`
     li{
         margin-left: 10px;    
     }
+
+    @media screen and (max-width: 730px) {  
+        width: 100%; 
+    }
 `;
 
 const ImageDiv2 = styled.div`
@@ -199,6 +236,11 @@ const ImageDiv2 = styled.div`
         justify-content: center;
         align-items: center;
     }    
+
+    @media screen and (max-width: 730px) {  
+        padding-top: 3rem;
+        width: 80%; 
+    }
 `;
 
 const ContainerDiv5 = styled.div`
@@ -206,6 +248,12 @@ const ContainerDiv5 = styled.div`
     justify-content: center;
     align-items: center;    ;
     height: 50vh;
+
+    @media screen and (max-width: 730px) {  
+        height: auto;              
+        padding-top: 3rem;        
+        padding-bottom: 1rem;
+    }
 `;
 
 const CardContainerDiv = styled.div`
@@ -222,6 +270,16 @@ const CardContainerDiv = styled.div`
         width: 45%;
         height: auto;
         margin-bottom: 7rem;
+    }
+
+    @media screen and (max-width: 730px) {  
+        height: auto;   
+        flex-direction: column;         
+
+        img{      
+            width: 70%;  
+            margin-bottom: 0;
+        }
     }
 `;
 
