@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import logo from '../assets/logo.png';
-import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import { FaEnvelope, FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
 const FooterDiv = styled.footer`
     width: 100%;
@@ -172,17 +172,16 @@ const Footer = () => {
                     <li><a href="contato.php">Contato</a></li>
                 </FooterList>
                 <FooterList>
-                    <li><h3>Produtos</h3></li>
-                    <li><a href="#">App</a></li>
-                    <li><a href="#">Desktop</a></li>
-                    <li><a href="#">Cloud</a></li>
+                    <li>Rodovia LMG 746, Km 1</li>
+                    <li>Monte Carmelo - MG</li>
+                    <li>Telefone: (34) 3810-1044</li>
                 </FooterList>
                 <FooterSubscribe>
                     <h3>Inscreva-se</h3>
                     <p>Digite seu e-mail para ser notificado sobre nossas novas atualizações</p>
                     <InputGroup>
                         <input type="email" id="email" />
-                        <button><i className="bi bi-envelope"></i></button>
+                        <button><FaEnvelope /></button>
                     </InputGroup>
                 </FooterSubscribe>
             </FooterContent>

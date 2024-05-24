@@ -11,6 +11,7 @@ import mao from '../assets/mao.png';
 import arduino from '../assets/arduino-mega.png';
 import robozinho from '../assets/robozinho.png';
 import Footer from '../components/Footer';
+import Gallery from '../components/Gallery/Gallery';
 
 const ContainerDiv = styled.div`
     background-color: #111419;    
@@ -224,11 +225,6 @@ const CardContainerDiv = styled.div`
     }
 `;
 
-const ContainerDiv6 = styled.div`
-    background-color: #111419;
-    height: 40vh;
-`;
-
 export default function Home() {
     return (
         <div>
@@ -291,6 +287,7 @@ export default function Home() {
                     </TextDiv>
                 </CardContainerDiv>
             </ContainerDiv5>
+            <Gallery />
             <Footer />
         </div >
     );
