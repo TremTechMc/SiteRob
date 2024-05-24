@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import Header from '../components/Header'
+import Footer from '../components/Footer';
 
 const CentralDiv = styled.div`
     background-color: #111419;    
@@ -14,6 +15,7 @@ export default function About() {
             <Header />
             <CentralDiv>
             </CentralDiv>
+            <Footer />
         </div>
     )
 }

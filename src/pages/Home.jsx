@@ -10,6 +10,7 @@ import img3 from '../assets/imgCards/3.jpg';
 import mao from '../assets/mao.png';
 import arduino from '../assets/arduino-mega.png';
 import robozinho from '../assets/robozinho.png';
+import Footer from '../components/Footer';
 
 const ContainerDiv = styled.div`
     background-color: #111419;    
@@ -158,7 +159,7 @@ const ImageDivHand = styled.div`
 
 const ContainerDiv4 = styled.div`
     background-color: #fff;
-    height: 50vh;
+    height: 55vh;
     display: flex;
     align-items: center;
     justify-content: center;  
@@ -167,12 +168,24 @@ const ContainerDiv4 = styled.div`
 const InnerContainer = styled.div`
     display: flex;
     width: 70%;
-    justify-content: space-between; /* Espaço entre TextDiv2 e ImageDiv2 */
+    justify-content: space-between;
 `;
 
 
 const TextDiv2 = styled.div`
     width: 35%;   
+
+    h1, h2, p, ul{
+        padding-top: 0.75rem;
+    }
+
+    ul{
+        padding-left: 10px;
+    }
+
+    li{
+        margin-left: 10px;    
+    }
 `;
 
 const ImageDiv2 = styled.div`
@@ -278,7 +291,7 @@ export default function Home() {
                     </TextDiv>
                 </CardContainerDiv>
             </ContainerDiv5>
-            <ContainerDiv6></ContainerDiv6>
+            <Footer />
         </div >
     );
 }
