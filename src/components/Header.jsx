@@ -32,7 +32,7 @@ const Logo = styled.div`
     }
 
     @media screen and (max-width: 730px) {
-        display: ${props => (props.isMenuOpen ? 'none' : 'flex')};
+        display: ${props => (props.$isMenuOpen ? 'none' : 'flex')};
     }
 `;
 
@@ -58,7 +58,7 @@ const NavItem = styled.li`
 const NavLink = styled(Link)`
     text-decoration: none;
     font-size: 1.15rem;
-    color: ${props => props.active ? '#F3C509' : '#fff'};
+    color: ${props => props.$active === 'true' ? '#F3C509' : '#fff'};
     font-weight: 400;
     transition: all 0.4s;
 
@@ -143,7 +143,7 @@ export default function Header() {
 
     return (
         <StyledHeader>
-            <Logo isMenuOpen={isMobileMenuOpen}>
+            <Logo $isMenuOpen={isMobileMenuOpen}>
                 <Link to="/">
                     <img src={logo} alt="logo2" />
                 </Link>
@@ -151,16 +151,16 @@ export default function Header() {
             </Logo>
             <NavList>
                 <NavItem>
-                    <NavLink to="/" active={location.pathname === '/'}>Home</NavLink>
+                    <NavLink to="/" $active={location.pathname === '/' ? 'true' : 'false'}>Home</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink to="/about" active={location.pathname === '/about'}>Sobre Nós</NavLink>
+                    <NavLink to="/about" $active={location.pathname === '/about' ? 'true' : 'false'}>Sobre Nós</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink to="/projects" active={location.pathname === '/projects'}>Projetos</NavLink>
+                    <NavLink to="/projects" $active={location.pathname === '/projects' ? 'true' : 'false'}>Projetos</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink to="/contact" active={location.pathname === '/contact'}>Contato</NavLink>
+                    <NavLink to="/contact" $active={location.pathname === '/contact' ? 'true' : 'false'}>Contato</NavLink>
                 </NavItem>
             </NavList>
             <LoginButton>
@@ -174,16 +174,16 @@ export default function Header() {
             <MobileMenu open={isMobileMenuOpen}>
                 <MobileMenuContent>
                     <NavItem>
-                        <NavLink to="/" active={location.pathname === '/'} onClick={toggleMobileMenu}>Home</NavLink>
+                        <NavLink to="/" $active={location.pathname === '/' ? 'true' : 'false'} onClick={toggleMobileMenu}>Home</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink to="/about" active={location.pathname === '/about'} onClick={toggleMobileMenu}>Sobre Nós</NavLink>
+                        <NavLink to="/about" $active={location.pathname === '/about' ? 'true' : 'false'} onClick={toggleMobileMenu}>Sobre Nós</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink to="/projects" active={location.pathname === '/projects'} onClick={toggleMobileMenu}>Projetos</NavLink>
+                        <NavLink to="/projects" $active={location.pathname === '/projects' ? 'true' : 'false'} onClick={toggleMobileMenu}>Projetos</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink to="/contact" active={location.pathname === '/contact'} onClick={toggleMobileMenu}>Contato</NavLink>
+                        <NavLink to="/contact" $active={location.pathname === '/contact' ? 'true' : 'false'} onClick={toggleMobileMenu}>Contato</NavLink>
                     </NavItem>
                     <LoginButton>
                         <button><Link to="/login" onClick={toggleMobileMenu}>Entrar</Link></button>
