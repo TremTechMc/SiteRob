@@ -1,17 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import Header from '../components/Header';
-import Card from '../components/Card/Card';
-import walle from '../assets/wall.png';
-import img1 from '../assets/imgCards/1.jpg';
-import img2 from '../assets/imgCards/2.jpg';
-import img3 from '../assets/imgCards/3.jpg';
-import mao from '../assets/mao.png';
-import arduino from '../assets/arduino-mega.png';
-import robozinho from '../assets/robozinho.png';
-import Footer from '../components/Footer';
-import Gallery from '../components/Gallery/Gallery';
+import Header from '../../components/Header/Header';
+import Card from '../../components/Card/Card';
+import walle from '../../assets/wall.png';
+import img1 from '../../assets/imgCards/1.jpg';
+import img2 from '../../assets/imgCards/2.jpg';
+import img3 from '../../assets/imgCards/3.jpg';
+import mao from '../../assets/mao.png';
+import arduino from '../../assets/arduino-mega.png';
+import robozinho from '../../assets/robozinho.png';
+import Footer from '../../components/Footer/Footer';
+import Gallery from '../../components/Gallery/Gallery';
 
 const ContainerDiv = styled.div`
     background-color: #111419;    

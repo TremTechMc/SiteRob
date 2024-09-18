@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
-import Header from '../components/Header'
-import Footer from '../components/Footer';
+import Header from '../../components/Header/Header'
+import Footer from '../../components/Footer/Footer';
 
 const CentralDiv = styled.div`
     background-color: #111419;    
@@ -9,7 +9,7 @@ const CentralDiv = styled.div`
     height: 87.2vh;    
 `;
 
-export default function SignUp() {
+export default function Projects() {
     return (
         <div>
             <Header />

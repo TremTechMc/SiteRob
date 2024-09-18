@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
-import logo from '../assets/logo.png';
-import menu from '../assets/menu.svg';
-import close from '../assets/close.svg';
+import logo from '../../assets/logo.png';
+import menu from '../../assets/menu.svg';
+import close from '../../assets/close.svg';
 
 const StyledHeader = styled.div`
     background-color: #111419;    
