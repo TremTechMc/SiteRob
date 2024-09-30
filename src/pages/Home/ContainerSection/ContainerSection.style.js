@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ContainerDiv3 = styled.div`
+export const ContainerDiv = styled.div`
     background-color: #111419;
     height: 40vh;
     display: flex;
@@ -18,7 +18,7 @@ export const ImageDivHand = styled.div`
     width: 40%;
 
     img{
-        width: 88%;
+        width: 86%;
         height: auto;
         display: flex;
         justify-content: center;

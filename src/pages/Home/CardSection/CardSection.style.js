@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const ContainerDiv2 = styled.div`
     background-color: #e0b509;   
-    padding-top: 2rem;
-    padding-bottom: 1rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
     display: flex;
     flex-direction: column;    
     align-items: center;    

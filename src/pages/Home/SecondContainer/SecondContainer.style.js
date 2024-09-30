@@ -2,62 +2,78 @@ import styled from 'styled-components';
 
 export const ContainerDiv4 = styled.div`
     background-color: #fff;
-    height: 55vh;
+    padding: 4rem 2rem;  
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     
     @media screen and (max-width: 730px) {  
-        height: auto;              
+        padding: 2rem 1rem;
     }
 `;
 
 export const TextDiv2 = styled.div`
-    width: 35%;   
+    width: 45%; 
+    color: #333; 
 
-    h1, h2, p, ul{
-        padding-top: 0.75rem;
+    h1 {
+        font-size: 2.5rem; 
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: #2c3e50;
     }
 
-    ul{
-        padding-left: 10px;
+    h2 {
+        font-size: 1.8rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        color: #2c3e50;
     }
 
-    li{
-        margin-left: 10px;    
+    p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+        color: #606c76;
     }
 
     @media screen and (max-width: 730px) {  
         width: 100%; 
+        text-align: center; 
     }
 `;
 
 export const InnerContainer = styled.div`
     display: flex;
-    width: 70%;
+    width: 80%; 
     justify-content: space-between;    
-
+    padding: 2rem;  
+    
     @media screen and (max-width: 730px) { 
-        flex-direction: column;           
-        display: flex;
-        justify-content: center;
-        align-items: center;    
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem;
     }
 `;
 
 export const ImageDiv2 = styled.div`
-    width: 35%; 
+    width: 45%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    img{
-        width: 100%;
+    img {
+        width: 80%; 
         height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }    
+        transition: transform 0.3s ease-in-out;
+    }
+
+    img:hover {
+        transform: scale(1.05); 
+    }
 
     @media screen and (max-width: 730px) {  
-        padding-top: 3rem;
-        width: 80%; 
+        width: 100%;
+        margin-top: 2rem;
     }
 `;
